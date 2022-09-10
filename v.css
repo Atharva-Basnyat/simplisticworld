@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(8.webp);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+}
+.nav-links li{
+    margin: 0px 30px;
+    
+    
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 18px auto;
+    border-radius: 5px;
+}
+.ctn{
+    
+    text-decoration: underline;
+    color: #fc036b;
+    margin-top: 60px;
+    text-align: right;
+    font-size: 20px;
+}
+.active{
+    color: #fc036b;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.bi{
+    color: white;
+    font-size: 20px;
+    
+}
+.logo{
+    font-size: 45px;
+}
+:root{
+    --clr: #222327;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--clr);
+    display: flex;
+
+}
+.navigation{
+    position: absolute;
+    width: 400px;
+    height: 70px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: none;
+}
+.navigation ul {
+    display: flex;
+    width: 380px;
+    
+}
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 60px;
+    z-index: 1;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size:1.5rem;
+    transition: 0.5s;
+    color: var(--clr);
+}
+.navigation ul li:active a .icon{
+    transform: translateY(-35px);
+    color: var(--clr);
+}
+.Text {
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.05rem;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.Text:hover{
+opacity: 1 ;
+transform: translateY(10px);
+
+
+}
+
+/* Mobile device */
+@media(max-width: 800px){
+    .ctn{
+        display: none;
+
+    }
+    .bi{
+        display: none;
+
+    }
+    .active{
+        display: none;
+    }
+    
+
+
+
+    :root{
+        --clr: #222327;
+    
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: var(--clr);
+        display: flex;
+    
+    }
+    .navigation{
+        position: absolute;
+        width: 400px;
+        height: 70px;
+        display: flex;
+        background: transparent;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    
+    }
+    .navigation ul {
+        display: flex;
+        width: 300px;
+        
+    }
+    .navigation ul li {
+        position: relative;
+        list-style: none;
+        width: 90px;
+        height: 60px;
+        z-index: 1;
+    }
+    .navigation ul li a{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+    }
+    .navigation ul li a .icon{
+        position: relative;
+        display: block;
+        line-height: 55px;
+        font-size:1.5rem;
+        transition: 0.5s;
+        color: white;
+    }
+    .navigation ul li:active a .icon{
+        transform: translateY(-35px);
+        color: var(--clr);
+    }
+    .Text {
+        position: absolute;
+        color: white;
+        font-weight: 400;
+        font-size: 0.75rem;
+        letter-spacing: 0.05rem;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(20px);
+        padding-top: 10px;
+        
+    }
+    .Text:hover{
+    opacity: 1 ;
+    transform: translateY(10px);
+    
+    
+    
+
+
+
+
+
+    
+    
+}}
